@@ -4,7 +4,7 @@ plugins {
     id 'java'
 }
 
-group = 'ru.danka'
+group = 'ru.danbka'
 version = '1.0'
 sourceCompatibility = '1.8'
 
@@ -23,6 +23,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.codehaus.jackson:jackson-mapper-asl:1.8.5'
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     annotationProcessor 'org.projectlombok:lombok'

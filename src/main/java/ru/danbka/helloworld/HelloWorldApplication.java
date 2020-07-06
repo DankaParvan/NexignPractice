@@ -1,4 +1,4 @@
-package ru.danka.helloworld;
+package ru.danbka.helloworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HelloWorldApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(HelloWorldApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(HelloWorldApplication.class, args);
+	}
 
 }
