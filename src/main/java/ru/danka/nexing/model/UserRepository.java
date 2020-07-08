@@ -1,4 +1,4 @@
-package ru.danbka.helloworld.model;
+package ru.danka.nexing.model;
 
 import org.springframework.data.repository.CrudRepository;
 

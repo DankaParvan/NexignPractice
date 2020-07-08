@@ -1,4 +1,4 @@
-package ru.danbka.helloworld.model;
+package ru.danka.nexing.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
