@@ -2,15 +2,15 @@ package ru.danka.nexing.manager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.danka.nexing.model.UserStatus;
 import ru.danka.nexing.model.User;
 import ru.danka.nexing.model.UserRepository;
+import ru.danka.nexing.model.UserStatus;
 
 import java.util.Date;
 import java.util.List;
 
 @Service
-public class MiscManagerImpl implements MiscManager {
+public class MiscServiceImpl implements MiscService {
     @Autowired
     UserRepository userRepository;
 

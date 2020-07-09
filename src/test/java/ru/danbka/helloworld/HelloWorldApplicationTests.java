@@ -1,10 +1,10 @@
-package ru.danka.nexing;
+package ru.danbka.helloworld;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class HelloWorldApplicationTests {
 
 	@Test
 	void contextLoads() {

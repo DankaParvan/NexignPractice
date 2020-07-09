@@ -1,23 +1,27 @@
 package ru.danka.nexing.manager;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ru.danka.nexing.exception.UnknownUserException;
 import ru.danka.nexing.model.User;
-import ru.danka.nexing.model.UserStatus;
 import ru.danka.nexing.model.UserRepository;
+import ru.danka.nexing.model.UserStatus;
 
 import java.util.Date;
 import java.util.Optional;
 
 @Service
-public class UserManagerImpl implements UserManager {
-    @Autowired
-    UserRepository userRepository;
+public class UserServiceImpl implements UserService {
+    final UserRepository userRepository;
+
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
 
     @Override
-    public Optional<User> getUser(Long id) {
-        return userRepository.findById(id);
+    public User getUser(Long id) {
+        Optional<User> user = userRepository.findById(id);
+        return user.orElseThrow(() -> new UnknownUserException("Can't find user with this id"));
     }
 
     @Override

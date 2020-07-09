@@ -25,6 +25,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.codehaus.jackson:jackson-mapper-asl:1.8.5'
 	compile 'org.springdoc:springdoc-openapi-ui:1.2.32'
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
